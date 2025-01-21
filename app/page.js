@@ -38,8 +38,8 @@ export default async function Home() {
         profile={profile}
       />
       <GitLanguage />
-      <Rank />
       <Contributions />
+      <Rank />
     </>
   )
 };

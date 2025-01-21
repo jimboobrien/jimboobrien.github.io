@@ -19,6 +19,13 @@ function GitLanguage() {
               alt="github repos-per-language"
               className="rounded-lg lg:h-64 w-full bg-primary-bg"
             />
+            { /* <Image
+              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&size_weight=0.5&count_weight=0.5`}
+              width={1080}
+              height={560}
+              alt="github repos-per-language"
+              className="rounded-lg lg:h-64 w-full bg-primary-bg"
+            /> */ }
           </GlowCard>
 
           <GlowCard identifier="most-commit-language">

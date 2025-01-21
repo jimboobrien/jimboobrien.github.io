@@ -14,5 +14,30 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #0d1224;
+  /* background-color: #0d1224; */
+  background-color: #231e61;
+}
+
+.text-vqdev-primary {
+  color: #2BB673;
+}
+
+.vqdev-primary {
+  color: #231e61;
+}
+
+.vqdev-secondary {
+  color: #21648B;
+}
+
+.vqdev-tertiary {
+  color: #1A8D85;
+}
+
+.vqdev-quaternary {
+  color: #2BB673;
+}
+
+.vqdev-quinary {
+  color: #8BC644;
 }

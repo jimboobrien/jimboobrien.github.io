@@ -12,10 +12,10 @@ function ProjectCard({ project }) {
       <div className="p-8 h-48 flex flex-col justify-between bg-primary-bg">
         <div className="">
           <div className="flex justify-between items-center">
-            <p className="text-xl font-semibold capitalize text-primary-title">
+            <p className="text-xl font-semibold capitalize text-vqdev-primary">
               {project.name}
             </p>
-            <IoLinkSharp className="text-primary-icon text-xl" />
+            <IoLinkSharp className="vqdev-secondary text-xl" />
           </div>
           <p className="line-clamp-2 text-primary-text my-5 text-sm">
             {project.description}
@@ -25,11 +25,11 @@ function ProjectCard({ project }) {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-6">
             <p className="flex items-center gap-2">
-              <FaRegStar className="text-primary-icon" />
+              <FaRegStar className="vqdev-secondary" />
               <span>{project.stargazers_count}</span>
             </p>
             <p className="flex items-center gap-2">
-              <FaCodeFork className="text-primary-icon" />
+              <FaCodeFork className="vqdev-secondary" />
               <span>{project.forks_count}</span>
             </p>
           </div>

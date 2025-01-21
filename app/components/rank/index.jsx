@@ -30,7 +30,7 @@ function Rank() {
             />
           </GlowCard>
         </>
-
+       { /*
         <>
           <Image
             src={`https://stardev.io/developers/${userData.githubUser}/badge/languages/global.svg`}
@@ -47,6 +47,7 @@ function Rank() {
             className="rounded-lg"
           />
         </>
+        */ }
       </div>
     </div>
   );
