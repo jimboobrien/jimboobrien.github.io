@@ -16,13 +16,24 @@ async function getGitProfile() {
 };
 
 async function getGitProjects() {
-  const res = await fetch(`https://api.github.com/search/repositories?q=user:${userData.githubUser}+fork:false&sort=stars&per_page=10&type=Repositories`)
+  const res = await fetch(`https://api.github.com/search/repositories?q=user:${userData.githubUser}+fork:false&sort=stars&per_page=20&type=Repositories`);
+  const data = await res.json();
+  //data.items = data.items.filter(item => item.full_name !== 'jimboobrien/terms-policy-generator');
+  const excludedRepos = [
+    'jimboobrien/WOOCOMMERCE-CUSTOM-ORDER-SQL-DATA',
+    'jimboobrien/react-form-builder',
+    'jimboobrien/bootstrap-master',
+    'jimboobrien/react-parcel-webpack-starter-template',
+    'jimboobrien/form-builder',
+  ];
+  data.items = data.items.filter(item => !excludedRepos.includes(item.full_name));
+
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
 
-  return await res.json();
+  return data;
 };
 
 export default async function Home() {

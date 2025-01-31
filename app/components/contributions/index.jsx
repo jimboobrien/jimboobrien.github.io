@@ -15,6 +15,11 @@ function Contributions() {
           blockSize={14}
         />
       </div>
+      <div className="">
+          <p>Most of my contributions, including commits, pull requests, and code reviews, are made in private repositories for the Centers for Disease Control and Prevention (CDC).
+          These contributions involve collaborating with various teams to develop and maintain critical software solutions that support public health initiatives, but they are not reflected in my public GitHub profile and/or commit history.
+          </p>
+        </div>
     </div>
   );
 };
