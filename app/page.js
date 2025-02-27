@@ -25,6 +25,8 @@ async function getGitProjects() {
     'jimboobrien/bootstrap-master',
     'jimboobrien/react-parcel-webpack-starter-template',
     'jimboobrien/form-builder',
+    'jimboobrien/jimboobrien',
+    'jimboobrien/klipper-configs'
   ];
   data.items = data.items.filter(item => !excludedRepos.includes(item.full_name));
 
